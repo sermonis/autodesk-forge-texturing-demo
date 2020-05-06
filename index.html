@@ -1,0 +1,52 @@
+<head>
+	<meta charset="utf-8" />
+	<title>Tables and Shelves Layout POC</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link rel="stylesheet" href="./skeleton.min.css">
+	<link rel="shortcut icon" href="#">
+</head>
+
+
+<body style="margin:0; overflow-y: hidden;">
+
+  <div class="container">
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><img class="navbar-img" src="logo.png"/></li>
+          <!--
+          <li class="navbar-item"><button onClick="openView()" class="navbar-button">Open</button></li>
+          <li class="navbar-item"><button onClick="openView(3)" class="navbar-button button-primary">Level 3</button></li>
+          <li class="navbar-item mobile"><input class="navbar-button" id="level-slider" type="range" min="0" max="1" step="0.01" value="0" oninput="onSlider(value)"></li>
+          -->
+          <li class="navbar-item"><button onClick="switchtoHomeView()" class="navbar-button button-primary">Tables</button></li>
+          <li class="navbar-item"><button onClick="switchtoPlanoView()" class="navbar-button button-primary">Shelving</button></li>
+          <li class="navbar-item"><button onClick="switchToOriginalView()" class="navbar-button">Reset</button></li>
+          <li class="navbar-item"><button onClick="toggleLineStyle()" class="navbar-button">ToggleStyle</button></li>
+
+          <li class="navbar-itemr"><button onClick="window.open('https://github.com/wallabyway/retailPOC-planogram')" class="navbar-button">Github</button></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div id="panel">
+    <img src="img/images-9.jpg">
+    <img src="img/images-0.jpg">
+    <img src="img/images-4.jpg">
+    <img src="img/images-1.jpg">
+    <img src="img/images-2.jpg">
+    <img src="img/images-3.jpg">
+    <img src="img/images-5.jpg">
+  </div>
+
+  <div id="forgeViewer""></div>
+</body>
+
+<link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.min.css?v=v6.*" type="text/css">
+<script language="JavaScript" src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.js?v=v6.*"></script>
+<script language="JavaScript" src="https://xf79h9aa3l.execute-api.us-west-2.amazonaws.com/toolkit2/api/_adsk.js"></script>
+<script language="JavaScript" src="app.js"></script>
+<script language="JavaScript" src="extensions/floorExplode.js"></script>
+<script language="JavaScript" src="extensions/dragDrop.js"></script>
+<script language="JavaScript" src="extensions/planogramViews.js"></script>
